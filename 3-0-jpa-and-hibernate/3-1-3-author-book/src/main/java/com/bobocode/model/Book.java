@@ -1,9 +1,9 @@
 package com.bobocode.model;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
+import org.hibernate.annotations.NaturalId;
 
+import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -24,9 +24,23 @@ import java.util.Set;
 @NoArgsConstructor
 @Getter
 @Setter
+@EqualsAndHashCode(of = "isbn")
+@Entity
+@Table
 public class Book {
+
+    @Id
+    @GeneratedValue
     private Long id;
+
+    @Column(nullable = false)
     private String name;
+
+    @Column(unique = true)
+    @NaturalId
     private String isbn;
-    private Set<Author> authors;
+
+    @ManyToMany(mappedBy = "books")
+    @Setter(AccessLevel.PRIVATE)
+    private Set<Author> authors = new HashSet<>();
 }

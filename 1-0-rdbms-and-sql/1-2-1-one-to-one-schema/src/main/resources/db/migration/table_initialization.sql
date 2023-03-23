@@ -22,4 +22,22 @@ should have a column that stores primary key from a parent table, which is a for
 
 */
 
--- TODO: implement the SQL according to the description
+CREATE TABLE IF NOT EXISTS users (
+    id BIGINT,
+    email VARCHAR(255) NOT NULL ,
+    first_name VARCHAR(255) NOT NULL ,
+    last_name VARCHAR(255) NOT NULL ,
+    birthday DATE NOT NULL,
+    CONSTRAINT users_PK PRIMARY KEY (id),
+    CONSTRAINT users_email_AK UNIQUE (email)
+    );
+
+CREATE TABLE IF NOT EXISTS profiles(
+    user_id BIGINT,
+    job_position VARCHAR(255),
+    company VARCHAR(255),
+    education VARCHAR(255),
+    city VARCHAR(255),
+    CONSTRAINT profiles_PK PRIMARY KEY (user_id),
+    CONSTRAINT profiles_users_FK FOREIGN KEY (user_id) REFERENCES users(id)
+    );
