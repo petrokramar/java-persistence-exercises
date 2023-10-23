@@ -1,10 +1,9 @@
 package com.bobocode.model;
 
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import javax.persistence.*;
 
 /**
  * TODO: you're job is to implement mapping for JPA entity {@link Movie}

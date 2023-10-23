@@ -2,12 +2,12 @@ package com.bobocode.dao;
 
 import com.bobocode.exception.CompanyDaoException;
 import com.bobocode.model.Company;
+import jakarta.persistence.EntityManager;
 import org.hibernate.Session;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import java.util.function.Function;
 import jakarta.persistence.EntityManagerFactory;
+
+import java.util.function.Function;
 
 public class CompanyDaoImpl implements CompanyDao {
     private EntityManagerFactory entityManagerFactory;

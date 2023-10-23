@@ -1,9 +1,8 @@
 package com.bobocode.model;
 
+import jakarta.persistence.*;
 import lombok.*;
 
-import jakarta.persistence.CascadeType;
-import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;

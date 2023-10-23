@@ -3,11 +3,8 @@ package com.bobocode;
 import com.bobocode.exception.QueryHelperException;
 import org.hibernate.Session;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
-import java.util.Collection;
 import java.util.function.Function;
 
 /**
