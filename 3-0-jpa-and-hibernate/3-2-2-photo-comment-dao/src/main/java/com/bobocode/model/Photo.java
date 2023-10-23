@@ -9,6 +9,22 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * todo:
+ * - make a setter for field {@link Photo#comments} {@code private}
+ * - implement equals() and hashCode() based on identifier field
+ *
+ * - configure JPA entity
+ * - specify table name: "photo"
+ * - configure auto generated identifier
+ * - configure not nullable and unique column: url
+ *
+ * - initialize field comments
+ * - map relation between Photo and PhotoComment on the child side
+ * - implement helper methods {@link Photo#addComment(PhotoComment)} and {@link Photo#removeComment(PhotoComment)}
+ * - enable cascade type {@link jakarta.persistence.CascadeType#ALL} for field {@link Photo#comments}
+ * - enable orphan removal
+ */
 @Getter
 @Setter
 @EqualsAndHashCode(of = "id")

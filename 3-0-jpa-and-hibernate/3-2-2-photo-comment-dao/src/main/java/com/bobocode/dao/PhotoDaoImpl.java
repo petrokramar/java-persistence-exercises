@@ -4,7 +4,7 @@ import com.bobocode.model.Photo;
 import com.bobocode.model.PhotoComment;
 import com.bobocode.util.EntityManagerUtil;
 
-import javax.persistence.EntityManagerFactory;
+import jakarta.persistence.EntityManagerFactory;
 import java.util.List;
 import java.util.Objects;
 

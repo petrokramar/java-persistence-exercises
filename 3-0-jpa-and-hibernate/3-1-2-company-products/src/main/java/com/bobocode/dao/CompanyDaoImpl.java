@@ -7,6 +7,7 @@ import org.hibernate.Session;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import java.util.function.Function;
+import jakarta.persistence.EntityManagerFactory;
 
 public class CompanyDaoImpl implements CompanyDao {
     private EntityManagerFactory entityManagerFactory;

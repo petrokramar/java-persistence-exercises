@@ -2,6 +2,7 @@ package com.bobocode.model;
 
 import lombok.*;
 
+import jakarta.persistence.CascadeType;
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Objects;

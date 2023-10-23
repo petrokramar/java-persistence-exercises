@@ -3,6 +3,7 @@ package com.bobocode.model;
 import lombok.*;
 import org.hibernate.annotations.NaturalId;
 
+import jakarta.persistence.*;
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;

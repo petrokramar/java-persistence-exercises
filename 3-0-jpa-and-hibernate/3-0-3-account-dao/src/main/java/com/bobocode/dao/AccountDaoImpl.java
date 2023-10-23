@@ -6,6 +6,7 @@ import com.bobocode.model.Account;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.TypedQuery;
+import jakarta.persistence.EntityManagerFactory;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Function;
